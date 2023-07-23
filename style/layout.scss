@@ -1,0 +1,14 @@
+
+#wrapper {
+    @apply bg-[#01A1DF]/30;
+    @apply min-h-screen shadow-lg shadow-blue-950/20;
+    @apply mx-auto max-w-[400px];
+    backdrop-filter: blur(5px);
+    
+    font-family: 'Anuphan', sans-serif;
+}
+
+.site-title {
+    @apply font-medium text-2xl text-center;
+    @apply tracking-wide;
+}

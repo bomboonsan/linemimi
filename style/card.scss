@@ -1,0 +1,30 @@
+.list-cards {
+    @apply px-4;
+}
+
+.card-game {
+    @apply flex flex-wrap gap-3 items-center;
+    @apply bg-white border border-black/50 rounded-lg mb-4;
+    @apply shadow hover:shadow-lg transition-all;
+    @apply relative;
+}
+
+.card-thumbnail {
+    @apply p-1 border-r border-r-black/30;
+}
+
+.card-thumbnail img {
+    @apply aspect-[3/2] w-full h-auto object-cover;
+}
+
+.card-content {
+    @apply flex-1 text-black p-2;
+    @apply tracking-wide;
+    p {
+        @apply font-medium;
+    }
+    span {
+        @apply block text-right text-[.8em];
+        @apply absolute bottom-1 right-2;
+    }
+}

@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    @apply bg-[#0082D6] text-white;
+    background-image: url('/images/bg.jpg');
+    @apply bg-cover bg-center;
+}
+
+.btn-primary {
+    @apply bg-[#034b7b] border-[#034b7b] hover:bg-[#0a354f];
+}
+
+@import '../style/layout.scss';
+@import '../style/card.scss';
+@import '../style/choise.scss';
+@import '../style/sweetalert.scss';
