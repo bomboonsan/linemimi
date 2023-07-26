@@ -8,6 +8,14 @@
     font-family: 'Anuphan', sans-serif;
 }
 
+#backend-wrapper {
+    @apply bg-[#F1F5F9];
+    @apply min-h-screen shadow-lg shadow-blue-950/80;
+    @apply mx-auto max-w-screen-lg;
+    @apply text-neutral-900;
+    font-family: 'Anuphan', sans-serif;
+}
+
 .site-title {
     @apply font-medium text-2xl text-center;
     @apply tracking-wide;

@@ -8,6 +8,8 @@ body {
     @apply bg-[#0082D6] text-white;
     background-image: url('/images/bg.jpg');
     @apply bg-cover bg-center;
+    background-clip: border-box;
+    background-attachment: fixed;
 }
 
 .btn-primary {
@@ -18,3 +20,4 @@ body {
 @import '../style/card.scss';
 @import '../style/choise.scss';
 @import '../style/sweetalert.scss';
+@import '../style/backend.scss';
