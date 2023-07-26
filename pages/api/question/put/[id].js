@@ -10,7 +10,7 @@ export default async function handler(req, res) {
           const dataToSend = req.body;
     
           // Make the POST request to the external API
-          const response = await axios.put(`http://192.168.1.99:5000/api/question/id/${id}`, dataToSend);
+          const response = await axios.put(`https://ktambackend.bomboonsan.com/api/question/id/${id}`, dataToSend);
     
           // Return the response from the external API to the client
           res.status(response.status).json(response.data);

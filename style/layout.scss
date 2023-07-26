@@ -6,6 +6,7 @@
     backdrop-filter: blur(5px);
     
     font-family: 'Anuphan', sans-serif;
+    padding-bottom: 2em;
 }
 
 #backend-wrapper {
@@ -14,6 +15,7 @@
     @apply mx-auto max-w-screen-lg;
     @apply text-neutral-900;
     font-family: 'Anuphan', sans-serif;
+    padding-bottom: 2em;
 }
 
 .site-title {

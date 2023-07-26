@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import LayoutBackend from '@/components/layout/LayoutBackend'
 import { useState } from 'react'
 import Swal from 'sweetalert2'
+import axios from 'axios';
 
 export default function QuestionRandom() {
     const router = useRouter()
