@@ -307,7 +307,7 @@ export default function QuestionOneToOne() {
 
                         {payload.results.map((item , index) => ( 
                             <>
-                            <div className='box-container' index={index}>
+                            <div className='box-container' key={index}>
                                 <div className='box-header'>
                                     <h2>ตัวเลือกที่ {index+1}</h2>
                                 </div>

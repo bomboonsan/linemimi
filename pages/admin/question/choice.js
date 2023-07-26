@@ -405,7 +405,7 @@ export default function QuestionChoice() {
 
                         {payload.choices.map((item , index) => ( 
                             <>
-                            <div className='box-container' index={index}>
+                            <div className='box-container' key={index}>
                                 <div className='box-header'>
                                     <h2>คำถามที่ {index+1}</h2>
                                 </div>
@@ -427,7 +427,7 @@ export default function QuestionChoice() {
                                         <input type="number" value={item.answerList.length} onChange={(e) => selectNumberAnswers(e , index)} className="input input-sm input-bordered w-1/2" />
                                     </div>
                                     {item.answerList.map((item , indexAns) => (
-                                    <section>
+                                    <section key={key}>
                                         <div className='choise-item'>
                                             <div className="form-control">
                                                 <label className="label cursor-pointer">
@@ -525,7 +525,7 @@ export default function QuestionChoice() {
 
                         {payload.results.map((item , index) => ( 
                             <>
-                            <div className='box-container' index={index}>
+                            <div className='box-container' key={index}>
                                 <div className='box-header'>
                                     <h2>ผลลัพท์ {index+1}</h2>
                                 </div>

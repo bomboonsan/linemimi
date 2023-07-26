@@ -94,7 +94,7 @@ export default function QuestionAll() {
                                 <tbody>
 
                                     {data.map((item,index) => (
-                                        <tr index={index}>
+                                        <tr key={index}>
                                             <th>{index+1}</th>
                                             <td>{item.questionTitle}</td>
                                             <td>{item.questionType}</td>
