@@ -12,9 +12,9 @@ export default function HeaderBackend() {
         const accessTokenState = Cookies.get('token');
         setAccessToken(accessTokenState)     
         
-        if (!accessTokenState) {
-            router.push('/admin')
-        }
+        // if (!accessTokenState) {
+        //     router.push('/admin')
+        // }
     }, []);
 
     const handleLogout = () => {
