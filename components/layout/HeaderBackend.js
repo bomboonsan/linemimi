@@ -22,12 +22,12 @@ export default function HeaderBackend() {
         router.push('/admin')
     }
 
-    if (!accessToken) {
-        return (
-            <>
-            </>
-        )
-    }
+    // if (!accessToken) {
+    //     return (
+    //         <>
+    //         </>
+    //     )
+    // }
     
     return (
         <>
