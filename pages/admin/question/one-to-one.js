@@ -193,6 +193,14 @@ export default function QuestionOneToOne() {
         }    
     }
 
+    const alertText = (text) => {
+        Swal.fire({
+            icon: 'warning',
+            text: text,
+            confirmButtonText: 'ตกลง',
+        })
+    }
+
     const submitQuestion = async () => {
         // let lastResult = newGlobolEvent.results[newGlobolEvent.results.length - 1];
         if (payload.questionTitle == '') {
