@@ -16,8 +16,8 @@ export default function Home() {
     fetchData();
 
     const loginWithLine = async () => {
-      const liffUrl = 'https://liff.line.me/2000252316-R4ew6WMz';
-      const liffId = '2000252316-R4ew6WMz';
+      const liffUrl = 'https://liff.line.me/2000258623-4BMQVqAl';
+      const liffId = '2000258623-4BMQVqAl';
       // const lineOAUrl = 'https://lin.ee/jNXQe85';
       // const lineOAUrl = 'https://line.me/R/ti/p/@163nxguy'; 
       const lineOAUrl = 'https://line.me/R/ti/p/@144cnkiy'; 
