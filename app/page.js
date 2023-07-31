@@ -82,7 +82,9 @@ export default function Home() {
         <Link href="/game-sum"><Card cardThumbnail={'/images/logo.png'} cardTitle={'กรุ๊ปเลือดคุณ ?'} cardView={'234'} /></Link> */}
         {data.map((item,index) => (
           <div key={index}>
+            {index < 2 &&
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
+            }            
           </div>
         ))}
       </div>
