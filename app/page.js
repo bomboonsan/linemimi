@@ -77,14 +77,13 @@ export default function Home() {
 
   return (
     <>
-    
       <div className='list-cards'>
         {/* <Link href="/game-random"><Card cardThumbnail={'/images/logo.png'} cardTitle={'กรุ๊ปเลือดคุณ เหมาะกับการลงทุนแบบไหนดี?'} cardView={'1234'} /></Link>
         <Link href="/game-fix"><Card cardThumbnail={'/images/logo.png'} cardTitle={'กรุ๊ปเลือดคุณ ?'} cardView={'234'} /></Link>
         <Link href="/game-sum"><Card cardThumbnail={'/images/logo.png'} cardTitle={'กรุ๊ปเลือดคุณ ?'} cardView={'234'} /></Link> */}
         {data.map((item,index) => (
           <div key={index}>
-            {index_id == '64d3194bc0e96032b4845b02' &&
+            {index._id == '64d3194bc0e96032b4845b02' &&
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
             }            
           </div>
