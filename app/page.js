@@ -86,7 +86,7 @@ export default function Home() {
             {item._id == '64d3194bc0e96032b4845b02' &&
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
             }      
-            {item._id == '64c08b4c30238cc299829714' &&
+            {item._id == '64ffdd43673c4ed909e44e37' &&
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
             }   
           </div>
