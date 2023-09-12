@@ -83,7 +83,7 @@ export default function Home() {
         <Link href="/game-sum"><Card cardThumbnail={'/images/logo.png'} cardTitle={'กรุ๊ปเลือดคุณ ?'} cardView={'234'} /></Link> */}
         {data.map((item,index) => (
           <div key={index}>
-            {item._id == '64d3194bc0e96032b4845b02' &&
+            {item._id == '64d3194bc0e96032b4845b02' || item._id == '64c08b4c30238cc299829714' &&
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
             }            
           </div>
