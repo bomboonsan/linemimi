@@ -104,7 +104,22 @@ export default function GameRandom() {
             <LayoutFrontend>
                 <div className='px-3'>
                     <p>views : {pageViews}</p>
-                    {isStart && <StartGame gameName={data.questionTitle} gameThumbnail={`${urlBackend}${data.questionImage}`} />}
+                    
+                    {isStart && data._id == '652784aa801b0a0da4fcba03' && 
+                    <>
+                    <h1 className='text-center text-2xl font-bold'>
+                        เลือกกองทุนลดหย่อนภาษี <br/>
+                        (SSF-RMF)ที่ใช่ ให้เหมาะกับสไตล์คุณ
+                    </h1>
+                    <div className='py-4'>
+                        <figure className='px-3'>
+                            <img className='w-full h-auto rounded-md shadow-md' src={`${urlBackend}${data.questionImage}`} alt={data.questionTitle} />
+                        </figure>
+                    </div>  
+                    </>
+                    }
+
+                    {isStart && data._id !== '652784aa801b0a0da4fcba03' && <StartGame gameName={data.questionTitle} gameThumbnail={`${urlBackend}${data.questionImage}`} />}
                     {isStart && <div onClick={changeState}><ButtonGame buttonText={'ถัดไป'} /></div>}
 
                     {isPlaying &&
@@ -112,7 +127,7 @@ export default function GameRandom() {
                     {/* <ChoiceGameTitle title={data.questionTitle} /> */}
                     {data._id == '652784aa801b0a0da4fcba03' ?
                     <>
-                    <h2 className='text-xl font-bold'>
+                    <h2 className='text-xl font-bold text-center'>
                         เลือกกองทุนลดหย่อนภาษี <br/>
                         (SSF-RMF)ที่ใช่ ให้เหมาะกับสไตล์คุณ
                     </h2>
