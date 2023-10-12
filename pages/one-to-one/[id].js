@@ -109,7 +109,18 @@ export default function GameRandom() {
 
                     {isPlaying &&
                     <>
+                    {/* <ChoiceGameTitle title={data.questionTitle} /> */}
+                    {data._id == '652784aa801b0a0da4fcba03' ?
+                    <>
+                    <h2 className='text-xl font-bold'>
+                        เลือกกองทุนลดหย่อนภาษี <br/>
+                        (SSF-RMF)ที่ใช่ ให้เหมาะกับสไตล์คุณ
+                    </h2>
+                    </> 
+                    : 
                     <ChoiceGameTitle title={data.questionTitle} />
+                    }
+                    
 
                     {data.results.map ((item , index) => (
                         <>
