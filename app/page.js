@@ -95,7 +95,13 @@ export default function Home() {
             {/* 655466dbd0b8d64176c29260 */}
             {item._id == '65546a46d0b8d64176c29275' &&
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
+            }  
+            {item._id == '655fe777906f48d9dab599c4' &&
+            <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
             }   
+            {/* {item._id == '652784aa801b0a0da4fcba03' &&
+            <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
+            }     */}
           </div>
         ))}
       </div> 
