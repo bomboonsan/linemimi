@@ -96,7 +96,7 @@ export default function Home() {
             {item._id == '65546a46d0b8d64176c29275' &&
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
             }  
-            {item._id == '655fe777906f48d9dab599c4' &&
+            {item._id == '65609600802793b77f5d44f7' &&
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
             }   
             {/* {item._id == '652784aa801b0a0da4fcba03' &&
