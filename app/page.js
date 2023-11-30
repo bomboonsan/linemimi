@@ -102,7 +102,7 @@ export default function Home() {
             {/* {item._id == '652784aa801b0a0da4fcba03' &&
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
             }     */}
-            {item._id == '655fe901906f48d9dab599d2' && 
+            {item._id == '65681a412970521eb935b881' && 
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
             }   
           </div>
