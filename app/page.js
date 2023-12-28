@@ -105,6 +105,9 @@ export default function Home() {
             {item._id == '65681a412970521eb935b881' && 
             <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
             }   
+            {item._id == '658d2a7389b49bcc180280e7' && 
+            <Link href={`/${item.questionType}/${item._id}`}><Card cardThumbnail={`${urlBackend}${item.questionImage}`} cardTitle={item.questionTitle} cardView={item.views} /></Link>
+            }
           </div>
         ))}
       </div> 
