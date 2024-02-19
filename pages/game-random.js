@@ -6,6 +6,8 @@ import ResultGame from '@/components/game/ResultGame'
 import ButtonGame from '@/components/game/ButtonGame'
 import { useState , useEffect } from 'react'
 
+import liff from '@line/liff';
+
 export default function GameRandom() {
     const [isStart , setIsStart] = useState(true);
     const [isResult , setIsResul] = useState(false);
@@ -16,7 +18,7 @@ export default function GameRandom() {
     }
 
     useEffect(() => {
-            
+
         const loginWithLine = async () => {
           const liffUrl = 'https://liff.line.me/1649555704-Bew7oNw5';
           const liffId = '1649555704-Bew7oNw5';
