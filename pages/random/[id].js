@@ -7,6 +7,8 @@ import ButtonGame from '@/components/game/ButtonGame'
 import { useState , useEffect } from 'react'
 import { useRouter } from 'next/router';
 
+import liff from '@line/liff';
+
 export default function GameRandom() {
     const router = useRouter()
     const { id } = router.query;
@@ -21,6 +23,44 @@ export default function GameRandom() {
             fetchData();            
         }
     }, [id]);
+
+    useEffect(() => {
+
+        const loginWithLine = async () => {
+          const liffUrl = 'https://liff.line.me/1649555704-Bew7oNw5';
+          const liffId = '1649555704-Bew7oNw5';
+          const lineOAUrl = 'https://line.me/R/ti/p/@144cnkiy'; 
+    
+          await liff.init({ liffId });
+          
+          if (liff.isLoggedIn()) {
+            const profile = await liff.getProfile();
+            const userId = profile.userId;
+    
+            try {
+              const isFriendData = await liff.getFriendship();
+              const isFriend = isFriendData.friendFlag
+              console.log(isFriendData)
+              if (isFriend) {
+                // window.location.href = liffUrl;
+              } else {
+                // liff.openWindow({
+                //   url: lineOAUrl,
+                //   // external: true,
+                //   external: false,
+                // });
+              }
+            } catch (error) {
+              console.log(error);
+            }
+    
+          } else {
+            liff.login();
+          }
+        };
+    
+        loginWithLine();
+    }, []);
 
     const fetchData = async () => {
         try {
