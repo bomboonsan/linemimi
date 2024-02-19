@@ -57,7 +57,7 @@ export default function GameRandom() {
             }
     
           } else {
-            liff.login();
+            liff.login({ redirectUri: window.location.href });
           }
         };
     

@@ -59,7 +59,7 @@ export default function GameSum() {
             }
     
           } else {
-            liff.login();
+            liff.login({ redirectUri: window.location.href });
           }
         };
     
