@@ -4,7 +4,7 @@ import LayoutFrontend from '@/components/layout/LayoutFrontend'
 import StartGame from '@/components/game/StartGame'
 import ResultGame from '@/components/game/ResultGame'
 import ButtonGame from '@/components/game/ButtonGame'
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 
 export default function GameRandom() {
     const [isStart , setIsStart] = useState(true);
