@@ -16,8 +16,7 @@ export default function GameRandom() {
     }
 
     useEffect(() => {
-        fetchData();
-    
+            
         const loginWithLine = async () => {
           const liffUrl = 'https://liff.line.me/1649555704-Bew7oNw5';
           const liffId = '1649555704-Bew7oNw5';
